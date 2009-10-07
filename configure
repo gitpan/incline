@@ -2262,7 +2262,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE="incline"
- VERSION=0.04
+ VERSION=0.04_01
 
 
 cat >>confdefs.h <<_ACEOF
@@ -20990,3 +20990,11 @@ if test "$no_create" != yes; then
   $ac_cs_success || { (exit 1); exit 1; }
 fi
 
+
+cp Makefile Makefile.orig && perl META.yml.pl --fix-makefile < Makefile.orig > Makefile
+if test "$?" -ne "0"
+then
+	{ { echo "$as_me:$LINENO: error: failed to add metainfo to Makefile" >&5
+echo "$as_me: error: failed to add metainfo to Makefile" >&2;}
+   { (exit 1); exit 1; }; }
+fi

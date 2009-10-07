@@ -1,29 +1,30 @@
---- #YAML:1.0
-name: incline
+---
 abstract: a replicator for RDB shards
-version: 0.04
 author:
-  - Kazuho Oku <kazuhooku@gmail.com>
-license: bsd
-distribution_type: script
-dynamic_config: 0
-requires:
-  File::Slurp: 0
-  perl: 5.008
+  - 'Kazuho Oku <kazuhooku@gmail.com>'
 build_requires:
   DBI: 0
   List::MoreUtils: 0
   Scope::Guard: 0
   Test::mysqld: 0
-  Test::postgresqld: 0
-resources:
-  license: http://www.opensource.org/licenses/bsd-license.php
+  Test::postgresql: 0
+configure_requires:
+  YAML: 0
+  perl: 5.008
+distribution_type: script
+dynamic_config: 0
+generated_by: META.yml.pl
+license: bsd
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: incline
 no_index:
   directory:
     - example
     - src
     - t
-meta-spec:
-  version: 1.4
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-generated_by: META.yml.pl
+requires: {}
+resources:
+  license: http://www.opensource.org/licenses/bsd-license.php
+version: 0.04_01
