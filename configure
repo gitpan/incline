@@ -2262,7 +2262,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE="incline"
- VERSION=0.04_01
+ VERSION=0.05
 
 
 cat >>confdefs.h <<_ACEOF

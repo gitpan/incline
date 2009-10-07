@@ -24,7 +24,9 @@ no_index:
     - example
     - src
     - t
+  file:
+    - README.html
 requires: {}
 resources:
   license: http://www.opensource.org/licenses/bsd-license.php
-version: 0.04_01
+version: 0.05
